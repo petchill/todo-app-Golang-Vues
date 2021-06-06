@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS `todo_app`;
+USE `todo_app`;
+CREATE TABLE IF NOT EXISTS `users`(
+    `id` INT PRIMARY KEY AUTO_INCREMENT,
+    `email` VARCHAR(255) NOT NULL,
+    `password` VARCHAR(255) NOT NULL,
+    `password_salt` VARCHAR(255),
+    `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    `updated_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
