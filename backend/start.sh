@@ -1,2 +1,2 @@
 . ./env.sh
-./todo-app-backend
+air -c .air.toml

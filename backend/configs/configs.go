@@ -24,18 +24,3 @@ var DB = DBConfig{
 }
 
 var Port string = os.Getenv("PORT")
-
-// var Configs = &IConfig{
-// 	Port: os.Getenv("PORT"),
-// 	DB: DBConfig{
-// 		Host:     os.Getenv("DB_HOST"),
-// 		Port:     os.Getenv("DB_PORT"),
-// 		Username: os.Getenv("DB_USERNAME"),
-// 		Password: os.Getenv("PASSWORD"),
-// 		Name:     os.Getenv("DB_NAME"),
-// 	},
-// }
-
-// func readConfig() config {
-
-// }

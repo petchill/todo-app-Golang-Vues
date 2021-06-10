@@ -63,10 +63,10 @@ type IResponse struct {
 // }
 
 func NewToDoController(app *global.App) {
-	app.Router.HandleFunc("/todos", handleGet).Methods("GET")
+	app.Router.HandleFunc("/todos", handleGetTodos).Methods("GET")
 }
 
-func handleGet(res http.ResponseWriter, req *http.Request) {
+func handleGetTodos(res http.ResponseWriter, req *http.Request) {
 	db := models.Db
 	rows, err := db.Query("SELECT * FROM Todos")
 	if err != nil {
